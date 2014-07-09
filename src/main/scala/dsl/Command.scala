@@ -18,4 +18,5 @@ class Command(commandParts: List[String]) {
 
 object Command {
   def apply(commandString: String) = new Command(commandString.split("\\s").toList)
+  def apply(commands: String*) = new Command(commands.toList)
 }
